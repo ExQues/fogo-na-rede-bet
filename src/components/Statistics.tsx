@@ -58,13 +58,13 @@ const Statistics = () => {
             return (
               <div 
                 key={index}
-                className={`glass-effect rounded-xl p-8 text-center hover:neon-glow transition-all duration-300 animate-float ${
+                className={`glass-effect rounded-xl p-8 text-center hover:neon-glow transition-all duration-300 animate-float-slow ${
                   index % 2 === 0 ? 'diagonal-cut' : ''
                 }`}
-                style={{ animationDelay: `${index * 0.2}s` }}
+                style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <div className="mb-6">
-                  <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-xl flex items-center justify-center mb-4 animate-geometric-spin">
+                  <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-xl flex items-center justify-center mb-4 animate-geometric-spin-slow">
                     <Icon className={`w-8 h-8 text-white`} />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{stat.title}</h3>
