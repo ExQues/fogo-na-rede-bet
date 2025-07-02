@@ -58,7 +58,7 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-gray-dark text-foreground font-sans;
+    @apply bg-background text-foreground font-sans;
     font-family: 'Inter', sans-serif;
   }
 

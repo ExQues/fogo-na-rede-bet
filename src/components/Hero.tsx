@@ -5,11 +5,8 @@ import { Button } from '@/components/ui/button';
 const Hero = () => {
   return (
     <section className="relative min-h-[600px] overflow-hidden bg-gradient-dark">
-      {/* Animated Background Elements */}
+      {/* Animated Background Elements - Removed problematic geometric shapes */}
       <div className="absolute inset-0">
-        <div className="absolute top-10 left-10 w-32 h-32 bg-orange-primary opacity-20 rounded-full animate-float"></div>
-        <div className="absolute top-40 right-20 w-24 h-24 bg-orange-secondary opacity-30 transform rotate-45 animate-geometric-spin"></div>
-        <div className="absolute bottom-20 left-1/4 w-40 h-40 bg-orange-accent opacity-10 clip-path-diamond animate-pulse-orange"></div>
         <div className="broken-grid absolute inset-0 opacity-20"></div>
       </div>
 
