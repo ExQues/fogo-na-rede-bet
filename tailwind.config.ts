@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -61,7 +62,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Custom betting site colors
+				'orange-primary': '#FF6B35',
+				'orange-secondary': '#FF8C42',
+				'orange-accent': '#FFA726',
+				'gray-dark': '#1A1A1A',
+				'gray-medium': '#2D2D2D',
+				'gray-light': '#404040',
+				'neon-orange': '#FF4500',
+				'success-green': '#00C851',
+				'danger-red': '#FF4444'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -84,11 +95,38 @@ export default {
 					to: {
 						height: '0'
 					}
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0)' },
+					'50%': { transform: 'translateY(-10px)' }
+				},
+				'pulse-orange': {
+					'0%, 100%': { opacity: '1' },
+					'50%': { opacity: '0.7' }
+				},
+				'slide-diagonal': {
+					'0%': { transform: 'translateX(-100%) translateY(-100%)' },
+					'100%': { transform: 'translateX(0) translateY(0)' }
+				},
+				'geometric-spin': {
+					'0%': { transform: 'rotate(0deg) scale(1)' },
+					'50%': { transform: 'rotate(180deg) scale(1.1)' },
+					'100%': { transform: 'rotate(360deg) scale(1)' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-orange': 'pulse-orange 2s ease-in-out infinite',
+				'slide-diagonal': 'slide-diagonal 0.6s ease-out',
+				'geometric-spin': 'geometric-spin 8s linear infinite'
+			},
+			clipPath: {
+				'polygon-1': 'polygon(0 0, 100% 0, 85% 100%, 0% 100%)',
+				'polygon-2': 'polygon(15% 0%, 100% 0%, 100% 100%, 0% 100%)',
+				'diamond': 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
+				'hexagon': 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)'
 			}
 		}
 	},
