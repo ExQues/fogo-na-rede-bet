@@ -1,4 +1,3 @@
-
 import { BarChart3, Target, Trophy, Flame } from 'lucide-react';
 
 const Statistics = () => {
@@ -58,13 +57,12 @@ const Statistics = () => {
             return (
               <div 
                 key={index}
-                className={`glass-effect rounded-xl p-8 text-center hover:neon-glow transition-all duration-300 animate-float-slow ${
+                className={`glass-effect rounded-xl p-8 text-center hover:neon-glow transition-all duration-300 ${
                   index % 2 === 0 ? 'diagonal-cut' : ''
                 }`}
-                style={{ animationDelay: `${index * 0.5}s` }}
               >
                 <div className="mb-6">
-                  <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-xl flex items-center justify-center mb-4 animate-geometric-spin-slow">
+                  <div className="w-16 h-16 mx-auto bg-gradient-primary rounded-xl flex items-center justify-center mb-4">
                     <Icon className={`w-8 h-8 text-white`} />
                   </div>
                   <h3 className="text-xl font-semibold text-white mb-2">{stat.title}</h3>
